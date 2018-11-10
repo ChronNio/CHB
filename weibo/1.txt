@@ -1,0 +1,53 @@
+https://m.weibo.cn/api/container/getIndex?type=uid&value=1739928273&containerid=1076031739928273
+https://m.weibo.cn/api/container/getIndex?type=uid&value=1739928273&containerid=1005051739928273
+
+3 parameters:
+type=uid
+value=1739928273
+containerid=1076031739928273
+
+每条微博的json数据格式在F12的network里面
+https://m.weibo.cn/api/container/getIndex?type=uid&value=1739928273&containerid=1076031739928273&since_id=4275547741511797
+第一页：没有since_id
+第二页：since_id: 4275547741511797
+第三页：since_id: 4261433125008385
+第四页：since_id: 4256665714299266
+
+Response里面有下一条的since_id
+
+每个页面的json数据页面，即https://m.weibo.cn/api/container/getIndex?type=uid&value=1739928273&containerid=1076031739928273&page=2
+
+从这个页面中找出（每个页面9条微博）每条微博的idstr：4275342191221172，即当条微博中https://m.weibo.cn/api/comments/show?id=4275547741511797&page=1里面的[id]
+
+当条微博里面每条评论的json数据格式在F12的network里面
+https://m.weibo.cn/api/comments/show?id=4275547741511797&page=1
+
+
+
+
+4301215733469156
+
+用max_id
+
+
+idstr：（每条微博）
+4301215514936299
+4297295539097859
+4291143069835400
+4282724175372908
+
+
+\/|:?"*<>
+：
+
+https://m.weibo.cn/api/container/getIndex?type=uid&value=1739928273
+
+https://m.weibo.cn/api/container/getIndex?containerid=2302831739928273_-_INFO&type=uid&value=1739928273
+
+
+if __name__ == '__main__':
+    user_id = "1739928273"
+    getuserinfo(user_id)
+
+
+
